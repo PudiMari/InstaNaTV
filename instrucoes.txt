@@ -1,4 +1,4 @@
 - seguir o passo a passo do github https://github.com/krishnachaitanya7/pil_video;
-- fazer o donwload do chocolatey no powershell https://chocolatey.org/install;
-- fazer o donwload do vlc 'choco install vlc';
+- fazer o download do chocolatey no powershell https://chocolatey.org/install;
+- fazer o download do vlc 'choco install vlc', em modo administrador;
 - configurar as variáveis de ambiente para o vlc 'copiar o caminho do executável para o path do sistema';
