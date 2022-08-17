@@ -1,4 +1,0 @@
-- configurar a pradonização do tamanho das imagens a serem inseridas no video; 
-- arrumar a extensão das imagens que vão para o arquivo temporário;
-- colocar a vinheta no vídeo;
-- fazer donwload dos arquivos do instagram e colocar direto na pasta para o vídeo;
