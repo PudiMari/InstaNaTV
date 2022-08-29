@@ -3,7 +3,7 @@ from moviepy.editor import *
 
 files = []
 files_list = []
-path = './teste'
+path = './ifmtcuiabaoficial'
 
 for (dirpath, dirnames, filenames) in walk(path):
     files.extend(filenames)
