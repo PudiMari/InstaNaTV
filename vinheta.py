@@ -1,18 +1,18 @@
 from moviepy.editor import VideoFileClip, ColorClip, TextClip, CompositeVideoClip
 
 def pos(time):
-        return(time*-50, 'bottom')
+        return(time*-250, 'bottom')
 
 video = VideoFileClip('./clips.mp4')
 
-f = open('noticias.csv', 'r')
+f = open('noticias-ifmt.csv', 'r')
 data = f.read().replace('\n', '')
 
-text = TextClip(data, size = 10, color = 'white', fontsize = 50
+text = TextClip(data, color = 'green', fontsize = 80
     ).set_duration(video.duration)
 
 color = ColorClip(
-    text.size, color = (0, 0, 0), duration = video.duration
+    text.size, color = (255, 255, 255), duration = video.duration
 )
 
 cor_texto = CompositeVideoClip([color, text]).set_position(pos)
