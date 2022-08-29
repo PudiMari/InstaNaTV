@@ -2,7 +2,9 @@ import os
 import sys
 import subprocess
 import shlex
- 
+
+CaminhoArquivoControle="/tmp/ControleRadio"
+
 def TocaPlaylist():
     
     ComandoMPlayer = "mplayer -input file=/tmp/ControleRadio -slave -playlist "
@@ -16,5 +18,17 @@ def TocaPlaylist():
     args = shlex.split(ComandoPlaylist)
     InterfaceMPlayer = subprocess.Popen(args, shell=False, stdin=subprocess.PIPE, stdout=FNULL, stderr=subprocess.STDOUT)
     return
+
+def CriaArquivoControle():
+    if (os.path.exists(CaminhoArquivoControle)):
+        return
+ 
+    try:
+        os.mkfifo(CaminhoArquivoControle)
+    except:
+        print ("Falha ao criar arquivo de controle. Por favor, verifique o caminho de criacao do arquivo")
+        exit(1)
+
+CriaArquivoControle()
 
 TocaPlaylist()
