@@ -5,7 +5,7 @@ from datetime import datetime
 
 fmt = '%d-%m-%Y'
 
-dataDoDiretorio = os.path.getmtime("/content/2022-08-15_12-38-50_UTC_2.jpg")
+dataDoDiretorio = os.path.getmtime("ifmtcuiabaoficial")
 
 dataArquivo = datetime.fromtimestamp(dataDoDiretorio)
 
